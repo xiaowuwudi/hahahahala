@@ -2,6 +2,8 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="通过AI分析帮助建立深度亲密关系">
     <title>深度对话助手</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,8 +11,14 @@
     <div class="container">
         <h1>深度对话助手</h1>
         <div class="input-section">
-            <textarea id="inputText" placeholder="请粘贴对方的对话内容..."></textarea>
-            <button onclick="analyzeText()">深度分析</button>
+            <textarea 
+                id="inputText" 
+                placeholder="请粘贴对方的对话内容..."
+                aria-label="对话内容输入框"
+            ></textarea>
+            <button id="analyzeBtn" aria-label="开始分析">
+                深度分析
+            </button>
         </div>
         <div id="loading" class="hidden">分析中...（约需10-20秒）</div>
         <div id="result" class="result-box"></div>
