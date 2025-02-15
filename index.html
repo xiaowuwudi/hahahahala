@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>深度对话助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>深度对话助手</h1>
+        <div class="input-section">
+            <textarea id="inputText" placeholder="请粘贴对方的对话内容..."></textarea>
+            <button onclick="analyzeText()">深度分析</button>
+        </div>
+        <div id="loading" class="hidden">分析中...（约需10-20秒）</div>
+        <div id="result" class="result-box"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
