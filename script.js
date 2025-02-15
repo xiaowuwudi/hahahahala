@@ -33,7 +33,7 @@ async function analyzeText() {
                 'Authorization': `Bearer ${API_KEY}`
             },
             body: JSON.stringify({
-                model: "deepseek-ai/DeepSeek-V3",
+                model: "deepseek-ai/DeepSeek-R1",
                 messages: [{
                     role: "user",
                     content: `请分析以下对话内容，给出能帮助建立更深层次亲密关系的回复建议。要求：\n1. 体现深度共情\n2. 包含开放式问题\n3. 建议具体可操作\n4. 语言自然口语化\n\n对话内容：${inputText}`
