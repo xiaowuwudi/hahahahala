@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="通过AI分析帮助建立深度亲密关系">
-    <title>深度对话助手</title>
+    <title>亲密关系对话助手</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>深度对话助手</h1>
-        <div class="input-section">
+        <h1>亲密关系对话助手</h1>
+        <form id="chat-form">
             <textarea 
-                id="inputText" 
+                id="user-input" 
                 placeholder="请粘贴对方的对话内容..."
-                aria-label="对话内容输入框"
+                required
             ></textarea>
-            <button id="analyzeBtn" aria-label="开始分析">
-                深度分析
-            </button>
-        </div>
-        <div id="loading" class="hidden">分析中...（约需10-20秒）</div>
-        <div id="result" class="result-box"></div>
+            <button type="submit">生成回复</button>
+        </form>
+        <h2>建议回复：</h2>
+        <textarea 
+            id="response-output" 
+            readonly
+            placeholder="这里将显示生成的回复..."
+        ></textarea>
     </div>
     <script src="script.js"></script>
 </body>
